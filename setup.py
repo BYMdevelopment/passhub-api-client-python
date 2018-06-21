@@ -13,7 +13,7 @@ setuptools.setup(
     description='PassHub API Client',
     author='BYM Development LLC',
     author_email='dev@sightseeingtech.com',
-    url='http://sightseeing.tech',
+    url='https://github.com/BYMdevelopment/passhub-api-client-python',
     keywords=['PassHub', 'SightseeingPass', 'API Client', 'API'],
     install_requires=REQUIRES,
     packages=setuptools.find_packages(),
