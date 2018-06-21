@@ -15,13 +15,13 @@ Python 2.7 and 3.4+
 If the python package is hosted on Github, you can install directly from Github
 
 ```sh
-pip install passhubapi
+pip install sightseeingtech_passhub_api
 ```
-(you may need to run `pip` with root permission: `sudo pip install passhubapi`)
+(you may need to run `pip` with root permission: `sudo pip install sightseeingtech_passhub_api`)
 
 Then import the package:
 ```python
-import passhubapi
+import sightseeingtech_passhub_api
 ```
 
 ### Setuptools
@@ -35,7 +35,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import passhubapi
+import sightseeingtech_passhub_api
 ```
 
 ## Getting Started
@@ -45,8 +45,8 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 from __future__ import print_function
 import time
-import passhubapi
-from passhubapi.rest import ApiException
+import sightseeingtech_passhub_api
+from sightseeingtech_passhub_api.rest import ApiException
 from pprint import pprint
 
 configuration = Configuration()
@@ -57,7 +57,7 @@ configuration.verify_ssl = False
 client = ApiClient(configuration)
 
 try:
-    productResourceApi = passhubapi.ProductResourceApi(client)
+    productResourceApi = sightseeingtech_passhub_api.ProductResourceApi(client)
 
     print('Loading products...')
 

@@ -16,8 +16,8 @@ import re  # noqa: F401
 
 import six
 
-from passhubapi.models.delivery_dto import DeliveryDTO  # noqa: F401,E501
-from passhubapi.models.group_entry_dto import GroupEntryDTO  # noqa: F401,E501
+from sightseeingtech_passhub_api.models.delivery_dto import DeliveryDTO  # noqa: F401,E501
+from sightseeingtech_passhub_api.models.group_entry_dto import GroupEntryDTO  # noqa: F401,E501
 
 
 class OrderRecordDTO(object):

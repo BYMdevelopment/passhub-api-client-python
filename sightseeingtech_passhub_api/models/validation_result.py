@@ -16,11 +16,11 @@ import re  # noqa: F401
 
 import six
 
-from passhubapi.models.product_suggestion import ProductSuggestion  # noqa: F401,E501
-from passhubapi.models.recharge_prompt import RechargePrompt  # noqa: F401,E501
-from passhubapi.models.suggested_order import SuggestedOrder  # noqa: F401,E501
-from passhubapi.models.universal_attribute import UniversalAttribute  # noqa: F401,E501
-from passhubapi.models.validation_result_entry import ValidationResultEntry  # noqa: F401,E501
+from sightseeingtech_passhub_api.models.product_suggestion import ProductSuggestion  # noqa: F401,E501
+from sightseeingtech_passhub_api.models.recharge_prompt import RechargePrompt  # noqa: F401,E501
+from sightseeingtech_passhub_api.models.suggested_order import SuggestedOrder  # noqa: F401,E501
+from sightseeingtech_passhub_api.models.universal_attribute import UniversalAttribute  # noqa: F401,E501
+from sightseeingtech_passhub_api.models.validation_result_entry import ValidationResultEntry  # noqa: F401,E501
 
 
 class ValidationResult(object):

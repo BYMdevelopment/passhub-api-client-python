@@ -1,4 +1,4 @@
-# passhubapi.OrderRecordResourceApi
+# sightseeingtech_passhub_api.OrderRecordResourceApi
 
 All URIs are relative to *https://localhost:8090*
 
@@ -22,19 +22,19 @@ createOrderRecord
 ```python
 from __future__ import print_function
 import time
-import passhubapi
-from passhubapi.rest import ApiException
+import sightseeingtech_passhub_api
+from sightseeingtech_passhub_api.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: X-Api-Key
-configuration = passhubapi.Configuration()
+configuration = sightseeingtech_passhub_api.Configuration()
 configuration.api_key['X-Api-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-Api-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = passhubapi.OrderRecordResourceApi(passhubapi.ApiClient(configuration))
-order_record_dto = passhubapi.OrderRecordDTO() # OrderRecordDTO | the OrderRecord Dto
+api_instance = sightseeingtech_passhub_api.OrderRecordResourceApi(sightseeingtech_passhub_api.ApiClient(configuration))
+order_record_dto = sightseeingtech_passhub_api.OrderRecordDTO() # OrderRecordDTO | the OrderRecord Dto
 
 try:
     # createOrderRecord
@@ -76,18 +76,18 @@ Required permissions: CAN_GET_ORDERS
 ```python
 from __future__ import print_function
 import time
-import passhubapi
-from passhubapi.rest import ApiException
+import sightseeingtech_passhub_api
+from sightseeingtech_passhub_api.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: X-Api-Key
-configuration = passhubapi.Configuration()
+configuration = sightseeingtech_passhub_api.Configuration()
 configuration.api_key['X-Api-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-Api-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = passhubapi.OrderRecordResourceApi(passhubapi.ApiClient(configuration))
+api_instance = sightseeingtech_passhub_api.OrderRecordResourceApi(sightseeingtech_passhub_api.ApiClient(configuration))
 query = 'query_example' # str | query text (optional)
 _from = '_from_example' # str | Begin the of date range, format: YYYY-MM-DD (e.g. 2016-01-25) (optional)
 till = 'till_example' # str | End the of date range, format: YYYY-MM-DD (e.g. 2016-01-25) (optional)
@@ -148,18 +148,18 @@ Required permissions: CAN_GET_ORDERS
 ```python
 from __future__ import print_function
 import time
-import passhubapi
-from passhubapi.rest import ApiException
+import sightseeingtech_passhub_api
+from sightseeingtech_passhub_api.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: X-Api-Key
-configuration = passhubapi.Configuration()
+configuration = sightseeingtech_passhub_api.Configuration()
 configuration.api_key['X-Api-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-Api-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = passhubapi.OrderRecordResourceApi(passhubapi.ApiClient(configuration))
+api_instance = sightseeingtech_passhub_api.OrderRecordResourceApi(sightseeingtech_passhub_api.ApiClient(configuration))
 id = 789 # int | the internal id of order
 
 try:
@@ -202,18 +202,18 @@ Replaces voucher IDs of order items with new voucher ID in the specified order. 
 ```python
 from __future__ import print_function
 import time
-import passhubapi
-from passhubapi.rest import ApiException
+import sightseeingtech_passhub_api
+from sightseeingtech_passhub_api.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: X-Api-Key
-configuration = passhubapi.Configuration()
+configuration = sightseeingtech_passhub_api.Configuration()
 configuration.api_key['X-Api-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-Api-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = passhubapi.OrderRecordResourceApi(passhubapi.ApiClient(configuration))
+api_instance = sightseeingtech_passhub_api.OrderRecordResourceApi(sightseeingtech_passhub_api.ApiClient(configuration))
 order_id = 789 # int | the internal id of order
 new_voucher_id = 'new_voucher_id_example' # str | newVoucherId
 
@@ -258,19 +258,19 @@ updateOrderRecord
 ```python
 from __future__ import print_function
 import time
-import passhubapi
-from passhubapi.rest import ApiException
+import sightseeingtech_passhub_api
+from sightseeingtech_passhub_api.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: X-Api-Key
-configuration = passhubapi.Configuration()
+configuration = sightseeingtech_passhub_api.Configuration()
 configuration.api_key['X-Api-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-Api-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = passhubapi.OrderRecordResourceApi(passhubapi.ApiClient(configuration))
-order_record_dto = passhubapi.OrderRecordDTO() # OrderRecordDTO | the OrderRecord Dto
+api_instance = sightseeingtech_passhub_api.OrderRecordResourceApi(sightseeingtech_passhub_api.ApiClient(configuration))
+order_record_dto = sightseeingtech_passhub_api.OrderRecordDTO() # OrderRecordDTO | the OrderRecord Dto
 
 try:
     # updateOrderRecord

@@ -16,9 +16,9 @@ import re  # noqa: F401
 
 import six
 
-from passhubapi.models.simple_metadata import SimpleMetadata  # noqa: F401,E501
-from passhubapi.models.simple_product_dto import SimpleProductDTO  # noqa: F401,E501
-from passhubapi.models.user_dto import UserDTO  # noqa: F401,E501
+from sightseeingtech_passhub_api.models.simple_metadata import SimpleMetadata  # noqa: F401,E501
+from sightseeingtech_passhub_api.models.simple_product_dto import SimpleProductDTO  # noqa: F401,E501
+from sightseeingtech_passhub_api.models.user_dto import UserDTO  # noqa: F401,E501
 
 
 class OrderItem(object):

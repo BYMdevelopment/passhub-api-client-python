@@ -1,7 +1,7 @@
 from __future__ import print_function
-import passhubapi
-from passhubapi import ApiClient, Configuration
-from passhubapi.rest import ApiException
+import sightseeingtech_passhub_api
+from sightseeingtech_passhub_api import ApiClient, Configuration
+from sightseeingtech_passhub_api.rest import ApiException
 
 
 configuration = Configuration()
@@ -12,7 +12,7 @@ configuration.verify_ssl = False
 client = ApiClient(configuration)
 
 try:
-    productResourceApi = passhubapi.ProductResourceApi(client)
+    productResourceApi = sightseeingtech_passhub_api.ProductResourceApi(client)
 
     print('Loading products...')
 
@@ -24,10 +24,10 @@ except ApiException as e:
 
 
 try:
-    orderResourceApi = passhubapi.OrderRecordResourceApi(client)
+    orderResourceApi = sightseeingtech_passhub_api.OrderRecordResourceApi(client)
 
     print('Create order...')
-    orderItem = passhubapi.OrderItem()
+    orderItem = sightseeingtech_passhub_api.OrderItem()
     orderItem.sku = '1GL5_Child'
     orderItem.quantity = 1
     orderItem.price_paid = 100
@@ -39,9 +39,9 @@ try:
     orderItem.customer_email = 'test@mail.com'
     orderItem.customer_company = 'company'
 
-    group = passhubapi.GroupEntryDTO("groupName", [orderItem])
+    group = sightseeingtech_passhub_api.GroupEntryDTO("groupName", [orderItem])
 
-    orderRecord = passhubapi.OrderRecordDTO()
+    orderRecord = sightseeingtech_passhub_api.OrderRecordDTO()
     orderRecord.amount = 10
     orderRecord.delivery_method = 'DIGITAL'
     orderRecord.groups = [group]
@@ -52,7 +52,7 @@ try:
     print("The order is created, with the order id: %d.\n" % order.id)
 
     print('Validate voucher...')
-    voucherResourceApi = passhubapi.VoucherResourceApi(client)
+    voucherResourceApi = sightseeingtech_passhub_api.VoucherResourceApi(client)
 
     validationResult = voucherResourceApi.validate_voucher(order.groups[0].items[0].voucher_id, 12609)
 

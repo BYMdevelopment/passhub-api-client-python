@@ -23,9 +23,9 @@ import tempfile
 import six
 from six.moves.urllib.parse import quote
 
-from passhubapi.configuration import Configuration
-import passhubapi.models
-from passhubapi import rest
+from sightseeingtech_passhub_api.configuration import Configuration
+import sightseeingtech_passhub_api.models
+from sightseeingtech_passhub_api import rest
 
 
 class ApiClient(object):
@@ -258,7 +258,7 @@ class ApiClient(object):
             if klass in self.NATIVE_TYPES_MAPPING:
                 klass = self.NATIVE_TYPES_MAPPING[klass]
             else:
-                klass = getattr(passhubapi.models, klass)
+                klass = getattr(sightseeingtech_passhub_api.models, klass)
 
         if klass in self.PRIMITIVE_TYPES:
             return self.__deserialize_primitive(data, klass)

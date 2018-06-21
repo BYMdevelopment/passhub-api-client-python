@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from passhubapi.models.address import Address  # noqa: F401,E501
+from sightseeingtech_passhub_api.models.address import Address  # noqa: F401,E501
 
 
 class DeliveryDTO(object):

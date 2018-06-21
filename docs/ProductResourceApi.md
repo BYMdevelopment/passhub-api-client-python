@@ -1,4 +1,4 @@
-# passhubapi.ProductResourceApi
+# sightseeingtech_passhub_api.ProductResourceApi
 
 All URIs are relative to *https://localhost:8090*
 
@@ -19,18 +19,18 @@ Required permissions: CAN_GET_PRODUCTS_BY_VENDOR
 ```python
 from __future__ import print_function
 import time
-import passhubapi
-from passhubapi.rest import ApiException
+import sightseeingtech_passhub_api
+from sightseeingtech_passhub_api.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: X-Api-Key
-configuration = passhubapi.Configuration()
+configuration = sightseeingtech_passhub_api.Configuration()
 configuration.api_key['X-Api-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-Api-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = passhubapi.ProductResourceApi(passhubapi.ApiClient(configuration))
+api_instance = sightseeingtech_passhub_api.ProductResourceApi(sightseeingtech_passhub_api.ApiClient(configuration))
 vendor_id = 789 # int | the internal vendor id
 
 try:
@@ -73,18 +73,18 @@ Required permissions: CAN_GET_PRODUCTS
 ```python
 from __future__ import print_function
 import time
-import passhubapi
-from passhubapi.rest import ApiException
+import sightseeingtech_passhub_api
+from sightseeingtech_passhub_api.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: X-Api-Key
-configuration = passhubapi.Configuration()
+configuration = sightseeingtech_passhub_api.Configuration()
 configuration.api_key['X-Api-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-Api-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = passhubapi.ProductResourceApi(passhubapi.ApiClient(configuration))
+api_instance = sightseeingtech_passhub_api.ProductResourceApi(sightseeingtech_passhub_api.ApiClient(configuration))
 query = 'query_example' # str | query text (optional)
 size = 56 # int | quantity of listed records on page (optional)
 page = 56 # int | listing starts from page value (optional)

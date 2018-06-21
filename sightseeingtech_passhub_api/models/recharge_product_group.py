@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from passhubapi.models.recharge_prompt_entry import RechargePromptEntry  # noqa: F401,E501
+from sightseeingtech_passhub_api.models.recharge_prompt_entry import RechargePromptEntry  # noqa: F401,E501
 
 
 class RechargeProductGroup(object):

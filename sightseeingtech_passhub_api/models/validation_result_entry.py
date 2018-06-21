@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from passhubapi.models.validation_item_status_dto import ValidationItemStatusDTO  # noqa: F401,E501
+from sightseeingtech_passhub_api.models.validation_item_status_dto import ValidationItemStatusDTO  # noqa: F401,E501
 
 
 class ValidationResultEntry(object):

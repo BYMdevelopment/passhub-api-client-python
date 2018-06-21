@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from passhubapi.models.suggested_order_item import SuggestedOrderItem  # noqa: F401,E501
+from sightseeingtech_passhub_api.models.suggested_order_item import SuggestedOrderItem  # noqa: F401,E501
 
 
 class SuggestedOrder(object):

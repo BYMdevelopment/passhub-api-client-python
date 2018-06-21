@@ -1,4 +1,4 @@
-# passhubapi.VoucherResourceApi
+# sightseeingtech_passhub_api.VoucherResourceApi
 
 All URIs are relative to *https://localhost:8090*
 
@@ -21,21 +21,21 @@ Required permissions: CAN_CANCEL_VALIDATION
 ```python
 from __future__ import print_function
 import time
-import passhubapi
-from passhubapi.rest import ApiException
+import sightseeingtech_passhub_api
+from sightseeingtech_passhub_api.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: X-Api-Key
-configuration = passhubapi.Configuration()
+configuration = sightseeingtech_passhub_api.Configuration()
 configuration.api_key['X-Api-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-Api-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = passhubapi.VoucherResourceApi(passhubapi.ApiClient(configuration))
+api_instance = sightseeingtech_passhub_api.VoucherResourceApi(sightseeingtech_passhub_api.ApiClient(configuration))
 transaction_tag = 'transaction_tag_example' # str | the transaction tag of validation
 reason = 'reason_example' # str | the reason of validation (optional)
-note = passhubapi.OrderNoteParamDTO() # OrderNoteParamDTO | the validation note dto (optional)
+note = sightseeingtech_passhub_api.OrderNoteParamDTO() # OrderNoteParamDTO | the validation note dto (optional)
 
 try:
     # [V2] Cancel validation for the voucher
@@ -79,21 +79,21 @@ Required permissions: CAN_CANCEL_ORDER
 ```python
 from __future__ import print_function
 import time
-import passhubapi
-from passhubapi.rest import ApiException
+import sightseeingtech_passhub_api
+from sightseeingtech_passhub_api.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: X-Api-Key
-configuration = passhubapi.Configuration()
+configuration = sightseeingtech_passhub_api.Configuration()
 configuration.api_key['X-Api-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-Api-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = passhubapi.VoucherResourceApi(passhubapi.ApiClient(configuration))
+api_instance = sightseeingtech_passhub_api.VoucherResourceApi(sightseeingtech_passhub_api.ApiClient(configuration))
 order_id = 789 # int | the internal id of order
 voucher_id = 'voucher_id_example' # str | the voucher id (optional)
-note = passhubapi.OrderNoteParamDTO() # OrderNoteParamDTO | the voucher note dto (optional)
+note = sightseeingtech_passhub_api.OrderNoteParamDTO() # OrderNoteParamDTO | the voucher note dto (optional)
 
 try:
     # cancelVoucher
@@ -137,18 +137,18 @@ Required permissions: CAN_CONVERT_VOUCHER
 ```python
 from __future__ import print_function
 import time
-import passhubapi
-from passhubapi.rest import ApiException
+import sightseeingtech_passhub_api
+from sightseeingtech_passhub_api.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: X-Api-Key
-configuration = passhubapi.Configuration()
+configuration = sightseeingtech_passhub_api.Configuration()
 configuration.api_key['X-Api-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-Api-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = passhubapi.VoucherResourceApi(passhubapi.ApiClient(configuration))
+api_instance = sightseeingtech_passhub_api.VoucherResourceApi(sightseeingtech_passhub_api.ApiClient(configuration))
 old_voucher_id = 'old_voucher_id_example' # str | the old voucher id
 new_voucher_id = 'new_voucher_id_example' # str | the new voucher id
 
@@ -193,24 +193,24 @@ Required permissions: CAN_VALIDATE;
 ```python
 from __future__ import print_function
 import time
-import passhubapi
-from passhubapi.rest import ApiException
+import sightseeingtech_passhub_api
+from sightseeingtech_passhub_api.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: X-Api-Key
-configuration = passhubapi.Configuration()
+configuration = sightseeingtech_passhub_api.Configuration()
 configuration.api_key['X-Api-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-Api-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = passhubapi.VoucherResourceApi(passhubapi.ApiClient(configuration))
+api_instance = sightseeingtech_passhub_api.VoucherResourceApi(sightseeingtech_passhub_api.ApiClient(configuration))
 validation_id = 'validation_id_example' # str | the voucher validation id
 vendor_id = 789 # int | the internal id of vendor
 product_tag = 'product_tag_example' # str | the product tag (optional)
 order_item_ids = [56] # list[int] | the array of order item ids (optional)
 skip_expiry_check = true # bool | flag to skip expiry check within strategy (optional)
-extra_param_dto = passhubapi.ExtraValidationParamDTO() # ExtraValidationParamDTO | the validation extra params dto (optional)
+extra_param_dto = sightseeingtech_passhub_api.ExtraValidationParamDTO() # ExtraValidationParamDTO | the validation extra params dto (optional)
 
 try:
     # [V2] Validates voucher which represents single order item or group of them.

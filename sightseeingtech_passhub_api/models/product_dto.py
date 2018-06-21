@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from passhubapi.models.voucher_pattern import VoucherPattern  # noqa: F401,E501
+from sightseeingtech_passhub_api.models.voucher_pattern import VoucherPattern  # noqa: F401,E501
 
 
 class ProductDTO(object):
