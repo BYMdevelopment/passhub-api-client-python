@@ -1,4 +1,4 @@
-# PassHub Api
+# PassHub API Client
 
 PassHub API documentation
 
